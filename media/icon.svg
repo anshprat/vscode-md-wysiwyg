@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Large sizes (48, 128): Markdown mark + "edit" pencil badge. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#32383f"/>
+      <stop offset="1" stop-color="#1f2328"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3fb950"/>
+      <stop offset="1" stop-color="#238636"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <rect x="1.5" y="1.5" width="125" height="125" rx="26.5" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="3"/>
+  <!-- Markdown mark (public domain, github.com/dcurtis/markdown-mark), bbox 30..185 x 30..98 -->
+  <g transform="translate(8.1 16.4) scale(0.52)" fill="#ffffff">
+    <path d="M30 98V30h20l20 25 20-25h20v68H90V59L70 84 50 59v39zm125 0l-30-33h20V30h20v35h20z"/>
+  </g>
+  <!-- Pencil badge -->
+  <circle cx="96" cy="96" r="27" fill="#1f2328"/>
+  <circle cx="96" cy="96" r="22" fill="url(#badge)"/>
+  <g transform="translate(96 96) rotate(-45)" fill="#ffffff">
+    <rect x="-5" y="-5" width="18" height="10" rx="2"/>
+    <polygon points="-7,-5 -16,0 -7,5"/>
+  </g>
+</svg>
