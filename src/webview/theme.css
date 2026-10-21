@@ -1,0 +1,90 @@
+/*
+ * GitHub Primer variables used by the editor UI and code blocks. VS Code sets
+ * a class on <body> for the kind of color theme; GitHub's light colors go with
+ * light themes and its dark colors with dark themes.
+ */
+body:is(.vscode-light, .vscode-high-contrast-light) {
+  color-scheme: light;
+  --fgColor-default: #1f2328;
+  --fgColor-muted: #59636e;
+  --fgColor-accent: #0969da;
+  --fgColor-danger: #d1242f;
+  --fgColor-onEmphasis: #ffffff;
+  --bgColor-default: #ffffff;
+  --bgColor-muted: #f6f8fa;
+  --bgColor-accent-muted: #ddf4ff;
+  --bgColor-emphasis: #25292e;
+  --bgColor-neutral-muted: #818b981f;
+  --bgColor-danger-muted: #ffebe9;
+  --borderColor-default: #d1d9e0;
+  --borderColor-muted: #d1d9e0b3;
+  --borderColor-accent-emphasis: #0969da;
+  --overlay-bgColor: #ffffff;
+  --selection-bgColor: #0969da33;
+  --shadow-resting-medium: 0 1px 1px 0 #25292e1a, 0 3px 6px 0 #25292e1f;
+  --shadow-floating-small: 0 0 0 1px #d1d9e080, 0 6px 12px -3px #25292e0a, 0 6px 18px 0 #25292e1f;
+  --color-prettylights-syntax-comment: #59636e;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+}
+
+body:is(.vscode-dark, .vscode-high-contrast) {
+  color-scheme: dark;
+  --fgColor-default: #f0f6fc;
+  --fgColor-muted: #9198a1;
+  --fgColor-accent: #4493f8;
+  --fgColor-danger: #f85149;
+  --fgColor-onEmphasis: #ffffff;
+  --bgColor-default: #0d1117;
+  --bgColor-muted: #151b23;
+  --bgColor-accent-muted: #388bfd1a;
+  --bgColor-emphasis: #3d444d;
+  --bgColor-neutral-muted: #656c7633;
+  --bgColor-danger-muted: #f851491a;
+  --borderColor-default: #3d444d;
+  --borderColor-muted: #3d444db3;
+  --borderColor-accent-emphasis: #1f6feb;
+  --overlay-bgColor: #151b23;
+  --selection-bgColor: #388bfd66;
+  --shadow-resting-medium: 0 1px 1px 0 #01040966, 0 3px 6px 0 #010409cc;
+  --shadow-floating-small: 0 0 0 1px #3d444d, 0 6px 12px -3px #01040966, 0 6px 18px 0 #01040966;
+  --color-prettylights-syntax-comment: #9198a1;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-entity-tag: #7ee787;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+}
+
+body {
+  --fontStack-monospace: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+}
+
+/* "mdWysiwyg.colors": "editor": the color theme's background and text colors. */
+body.gmw-colors-editor {
+  --bgColor-default: var(--vscode-editor-background);
+  --fgColor-default: var(--vscode-editor-foreground);
+  --fgColor-accent: var(--vscode-textLink-foreground);
+  --overlay-bgColor: var(--vscode-editorWidget-background);
+  --selection-bgColor: var(--vscode-editor-selectionBackground);
+}
+body.gmw-colors-editor .gmw-root .markdown-body {
+  color: var(--vscode-editor-foreground);
+  background-color: var(--vscode-editor-background);
+}
+body.gmw-colors-editor .gmw-root .markdown-body a {
+  color: var(--vscode-textLink-foreground);
+}
