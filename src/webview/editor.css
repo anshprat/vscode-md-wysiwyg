@@ -87,6 +87,15 @@ body {
   /* markdown-body sets its own background; use the page background. */
   background: transparent;
 }
+/* Crepe paints the text caret with the outline color, a light border gray.
+   On light themes the caret is black. On dark themes it follows the text
+   color so it stays visible. */
+body:is(.vscode-light, .vscode-high-contrast-light) .gmw-root .milkdown .ProseMirror-focused {
+  --prosemirror-virtual-cursor-color: #000;
+}
+body:is(.vscode-dark, .vscode-high-contrast) .gmw-root .milkdown .ProseMirror-focused {
+  --prosemirror-virtual-cursor-color: var(--fgColor-default, #f0f6fc);
+}
 .gmw-root .milkdown .ProseMirror *::selection {
   background: var(--selection-bgColor, var(--crepe-color-selected));
 }
